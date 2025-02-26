@@ -45,7 +45,7 @@ namespace ExtractShapesFromGeoJson.structures
             Description = "",
             IsMandatory = false
         )]
-        public List<Linestring> CoordinateList;
+        public List<Coordinates> CoordinateList;
     }
 
     [OSStructure(

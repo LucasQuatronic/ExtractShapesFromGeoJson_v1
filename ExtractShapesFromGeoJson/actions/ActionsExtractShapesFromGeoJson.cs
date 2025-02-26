@@ -43,6 +43,11 @@ namespace ExtractShapesFromGeoJson.actions {
                     var multiLineStringCoordinates = ConvertMultiLineStringToCoordinates(coordinates);
                     shapes.Linestrings.AddRange(multiLineStringCoordinates);
                 }
+                else if (geometryType == "Polygon")
+                {
+                    var PolygonCoordinates = ConvertPolygonToCoordinates(coordinates);
+                    shapes.Polygons.Add(PolygonCoordinates);
+                }
             }
 
             return shapes;
@@ -93,6 +98,26 @@ namespace ExtractShapesFromGeoJson.actions {
             }
 
             return result;
+        }
+        
+        private static Polygon ConvertPolygonToCoordinates(JToken coordinates)
+        {
+            var Polygon = new Polygon
+            {
+                CoordinateList = new List<Coordinates>()
+            };
+
+            foreach (var coordinate in coordinates)
+            {
+                var point = new Coordinates
+                {
+                    XCoordinate = coordinate[0].ToObject<decimal>(),
+                    YCoordinate = coordinate[1].ToObject<decimal>()
+                };
+                Polygon.CoordinateList.Add(point);
+            }
+
+            return Polygon;
         }
     }
 }
