@@ -1,0 +1,5 @@
+C:\Users\LucasPijnackerHordij\OneDrive - Quatronic\Documents\1. Quatronic\7. Connekt\Extensions\ExtractShapesFromGeoJson_v1\ExtractShapesFromGeoJson\bin\Release\net8.0\linux-x64\publish\ExtractShapesFromGeoJson.dll
+C:\Users\LucasPijnackerHordij\OneDrive - Quatronic\Documents\1. Quatronic\7. Connekt\Extensions\ExtractShapesFromGeoJson_v1\ExtractShapesFromGeoJson\bin\Release\net8.0\linux-x64\publish\ExtractShapesFromGeoJson.deps.json
+C:\Users\LucasPijnackerHordij\OneDrive - Quatronic\Documents\1. Quatronic\7. Connekt\Extensions\ExtractShapesFromGeoJson_v1\ExtractShapesFromGeoJson\bin\Release\net8.0\linux-x64\publish\ExtractShapesFromGeoJson.pdb
+C:\Users\LucasPijnackerHordij\OneDrive - Quatronic\Documents\1. Quatronic\7. Connekt\Extensions\ExtractShapesFromGeoJson_v1\ExtractShapesFromGeoJson\bin\Release\net8.0\linux-x64\publish\Newtonsoft.Json.dll
+C:\Users\LucasPijnackerHordij\OneDrive - Quatronic\Documents\1. Quatronic\7. Connekt\Extensions\ExtractShapesFromGeoJson_v1\ExtractShapesFromGeoJson\bin\Release\net8.0\linux-x64\publish\OutSystems.ExternalLibraries.SDK.dll

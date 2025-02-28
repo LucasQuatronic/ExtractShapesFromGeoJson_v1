@@ -1,0 +1,13 @@
+C:\Users\LucasPijnackerHordij\OneDrive - Quatronic\Documents\1. Quatronic\7. Connekt\Extensions\ExtractShapesFromGeoJson_v1\ExtractShapesFromGeoJson\bin\Release\net8.0\ExtractShapesFromGeoJson.deps.json
+C:\Users\LucasPijnackerHordij\OneDrive - Quatronic\Documents\1. Quatronic\7. Connekt\Extensions\ExtractShapesFromGeoJson_v1\ExtractShapesFromGeoJson\bin\Release\net8.0\ExtractShapesFromGeoJson.dll
+C:\Users\LucasPijnackerHordij\OneDrive - Quatronic\Documents\1. Quatronic\7. Connekt\Extensions\ExtractShapesFromGeoJson_v1\ExtractShapesFromGeoJson\bin\Release\net8.0\ExtractShapesFromGeoJson.pdb
+C:\Users\LucasPijnackerHordij\OneDrive - Quatronic\Documents\1. Quatronic\7. Connekt\Extensions\ExtractShapesFromGeoJson_v1\ExtractShapesFromGeoJson\obj\Release\net8.0\ExtractShapesFromGeoJson.csproj.AssemblyReference.cache
+C:\Users\LucasPijnackerHordij\OneDrive - Quatronic\Documents\1. Quatronic\7. Connekt\Extensions\ExtractShapesFromGeoJson_v1\ExtractShapesFromGeoJson\obj\Release\net8.0\ExtractShapesFromGeoJson.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\LucasPijnackerHordij\OneDrive - Quatronic\Documents\1. Quatronic\7. Connekt\Extensions\ExtractShapesFromGeoJson_v1\ExtractShapesFromGeoJson\obj\Release\net8.0\ExtractShapesFromGeoJson.AssemblyInfoInputs.cache
+C:\Users\LucasPijnackerHordij\OneDrive - Quatronic\Documents\1. Quatronic\7. Connekt\Extensions\ExtractShapesFromGeoJson_v1\ExtractShapesFromGeoJson\obj\Release\net8.0\ExtractShapesFromGeoJson.AssemblyInfo.cs
+C:\Users\LucasPijnackerHordij\OneDrive - Quatronic\Documents\1. Quatronic\7. Connekt\Extensions\ExtractShapesFromGeoJson_v1\ExtractShapesFromGeoJson\obj\Release\net8.0\ExtractShapesFromGeoJson.csproj.CoreCompileInputs.cache
+C:\Users\LucasPijnackerHordij\OneDrive - Quatronic\Documents\1. Quatronic\7. Connekt\Extensions\ExtractShapesFromGeoJson_v1\ExtractShapesFromGeoJson\obj\Release\net8.0\ExtractShapesFromGeoJson.sourcelink.json
+C:\Users\LucasPijnackerHordij\OneDrive - Quatronic\Documents\1. Quatronic\7. Connekt\Extensions\ExtractShapesFromGeoJson_v1\ExtractShapesFromGeoJson\obj\Release\net8.0\ExtractShapesFromGeoJson.dll
+C:\Users\LucasPijnackerHordij\OneDrive - Quatronic\Documents\1. Quatronic\7. Connekt\Extensions\ExtractShapesFromGeoJson_v1\ExtractShapesFromGeoJson\obj\Release\net8.0\refint\ExtractShapesFromGeoJson.dll
+C:\Users\LucasPijnackerHordij\OneDrive - Quatronic\Documents\1. Quatronic\7. Connekt\Extensions\ExtractShapesFromGeoJson_v1\ExtractShapesFromGeoJson\obj\Release\net8.0\ExtractShapesFromGeoJson.pdb
+C:\Users\LucasPijnackerHordij\OneDrive - Quatronic\Documents\1. Quatronic\7. Connekt\Extensions\ExtractShapesFromGeoJson_v1\ExtractShapesFromGeoJson\obj\Release\net8.0\ref\ExtractShapesFromGeoJson.dll
