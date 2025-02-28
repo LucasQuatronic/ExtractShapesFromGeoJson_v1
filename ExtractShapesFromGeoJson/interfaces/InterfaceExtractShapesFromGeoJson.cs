@@ -15,6 +15,6 @@ namespace ExtractShapesFromGeoJson.interfaces
             ReturnName = "Shapes",
             ReturnType = OSDataType.InferredFromDotNetType
         )]
-        Shapes ExtractShapesFromGeoJson(string GeoJSONText);
+        Shapes ExtractShapesFromGeoJson(string GeoJSONText, int MaxNumberOfLocations);
     }
 }

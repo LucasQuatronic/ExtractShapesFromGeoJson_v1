@@ -8,7 +8,7 @@ using Newtonsoft.Json.Linq;
 namespace ExtractShapesFromGeoJson.actions {
     public class ActionsExtractShapesFromGeoJson : InterfaceExtractShapesFromGeoJson {
         
-        public Shapes ExtractShapesFromGeoJson(string GeoJSONText) {
+        public Shapes ExtractShapesFromGeoJson(string GeoJSONText, int MaxNumberOfLocations) {
 
             // Parse the GeoJSON
             var geoJsonObject = JObject.Parse(GeoJSONText);
@@ -23,8 +23,10 @@ namespace ExtractShapesFromGeoJson.actions {
                 Polygons = new List<Polygon>()
             };
 
+            // Take the first 10 features or less if there are fewer than 10
+            var limitedFeatures = features.Take(MaxNumberOfLocations);
             // Iterate through each feature
-            foreach (var feature in features)
+            foreach (var feature in limitedFeatures)
             {
                 // Get the geometry type and coordinates
                 var geometry = feature["geometry"];
@@ -41,7 +43,7 @@ namespace ExtractShapesFromGeoJson.actions {
                 {
                     // Convert MultiLineString to multiple Linestring structures
                     var multiLineStringCoordinates = ConvertMultiLineStringToCoordinates(coordinates);
-                    shapes.Linestrings.AddRange(multiLineStringCoordinates);
+                    shapes.Linestrings.Add(multiLineStringCoordinates);
                 }
                 else if (geometryType == "Polygon")
                 {
@@ -50,6 +52,7 @@ namespace ExtractShapesFromGeoJson.actions {
                 }
             }
 
+            
             return shapes;
         }
 
@@ -73,9 +76,10 @@ namespace ExtractShapesFromGeoJson.actions {
             return lineString;
         }
 
-        private static List<Linestring> ConvertMultiLineStringToCoordinates(JToken coordinates)
+        private static Linestring ConvertMultiLineStringToCoordinates(JToken coordinates)
         {
-            var result = new List<Linestring>();
+            var maxLineString = new Linestring();
+            int maxCount = 0;
 
             foreach (var line in coordinates)
             {
@@ -94,30 +98,38 @@ namespace ExtractShapesFromGeoJson.actions {
                     lineString.CoordinateList.Add(point);
                 }
 
-                result.Add(lineString);
+                if (lineString.CoordinateList.Count > maxCount)
+                {
+                    maxCount = lineString.CoordinateList.Count;
+                    maxLineString = lineString;
+                }
             }
 
-            return result;
+            // Return the Linestring with the most coordinates
+            return maxLineString;
         }
         
         private static Polygon ConvertPolygonToCoordinates(JToken coordinates)
         {
-            var Polygon = new Polygon
+            var polygon = new Polygon
             {
                 CoordinateList = new List<Coordinates>()
             };
 
-            foreach (var coordinate in coordinates)
+            foreach (var ring in coordinates)
             {
-                var point = new Coordinates
+                foreach (var coordinate in ring)
                 {
-                    XCoordinate = coordinate[0].ToObject<decimal>(),
-                    YCoordinate = coordinate[1].ToObject<decimal>()
-                };
-                Polygon.CoordinateList.Add(point);
+                    var point = new Coordinates
+                    {
+                        XCoordinate = coordinate[0].ToObject<decimal>(),
+                        YCoordinate = coordinate[1].ToObject<decimal>()
+                    };
+                    polygon.CoordinateList.Add(point);
+                }
             }
 
-            return Polygon;
+            return polygon;
         }
     }
 }

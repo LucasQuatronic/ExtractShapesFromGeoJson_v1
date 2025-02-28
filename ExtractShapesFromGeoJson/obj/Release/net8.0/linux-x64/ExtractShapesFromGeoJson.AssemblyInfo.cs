@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ExtractShapesFromGeoJson")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+93422a3b85815f06224796657473ef1effb92aa8")]
 [assembly: System.Reflection.AssemblyProductAttribute("ExtractShapesFromGeoJson")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ExtractShapesFromGeoJson")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
